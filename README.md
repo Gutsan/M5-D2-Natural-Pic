@@ -23,3 +23,8 @@ con React Router que deberás completar incluyendo lo correspondiente a Context 
 
 4. Hacer uso del hook useContext para acceder al estado global desde los
    componentes que lo necesiten. (3 Puntos)
+
+## Desarrollo de Desafio
+
+    ### API Pexels
+     Para obtener imagenes para galería se utiliza api paxels
