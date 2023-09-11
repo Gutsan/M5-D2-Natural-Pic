@@ -2,7 +2,8 @@ import "./App.css";
 import { useContext, useEffect } from "react";
 import { ContextAPI } from "./context/ContextAPI";
 import { createClient } from "pexels";
-
+import { Header } from "./Components/Header";
+import { BrowserRouter } from "react-router-dom";
 function App() {
   const API_KEY = "ulIo70LyKuyLYFuV8YYlsKRQgfsg76JjEQpXyLOWTjpJmrHVdNYVaQEy";
   const { dataImg, SetDataImg } = useContext(ContextAPI);
@@ -18,7 +19,10 @@ function App() {
 
   return (
     <>
-      <h1>{dataImg}</h1>
+      <BrowserRouter>
+        <Header />
+        <h1>HOLA MUNDO</h1>
+      </BrowserRouter>
     </>
   );
 }
