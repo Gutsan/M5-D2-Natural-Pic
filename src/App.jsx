@@ -1,14 +1,14 @@
 //import { useState } from "react";
-
+import { dataImg } from "./dataImg";
 import "./App.css";
-
+import { CardImg } from "./CardImg";
 function App() {
   //const [count, setCount] = useState(0);
 
   return (
-    <>
-      <h1>NATURAL PIC</h1>
-    </>
+    
+      <CardImg datImg={dataImg[0]}/>
+  
   );
 }
 
