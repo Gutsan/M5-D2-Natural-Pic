@@ -1,14 +1,20 @@
-//import { useState } from "react";
-import { dataImg } from "./dataImg";
 import "./App.css";
-import { CardImg } from "./CardImg";
-function App() {
-  //const [count, setCount] = useState(0);
 
+import { Header } from "./Components/Header";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { Home } from "./view/Home";
+function App() {
   return (
-    
-      <CardImg datImg={dataImg[0]}/>
-  
+    <>
+      <BrowserRouter>
+        <Header />
+        <Routes>
+          <Route index element={<Home />} />
+
+          <Route path="*" element={<Home />} />
+        </Routes>
+      </BrowserRouter>
+    </>
   );
 }
 
