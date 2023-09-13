@@ -1,16 +1,16 @@
+/* eslint-disable no-unused-vars */
 /* eslint-disable react-hooks/exhaustive-deps */
-import { useContext} from "react";
-import { ContextFAV } from "../context/contexFavorite";
+import { useContext } from "react";
+import { ContextAPI } from "../context/ContextAPI";
 import { CardImg } from "../Components/CardImg";
-import "./Home.css"
+import "./Home.css";
 export const Favorite = () => {
-  const { dataFav, SetDataFAV } = useContext(ContextFAV);
-
+  const { dataImg, SetDataImg } = useContext(ContextAPI);
   return (
     <main>
-      {dataFav.map((dat, index) => (
-        <CardImg key={index} datImg={dat} />
-      ))}
+      {dataImg.map((dat, index) =>
+        dat.liked ? <CardImg key={index} datImg={dat} index={index} /> : <></>
+      )}
     </main>
   );
 };
