@@ -1,29 +1,32 @@
 /* eslint-disable react-hooks/exhaustive-deps */
-import { useContext, useEffect } from "react";
+import { useContext,  useState } from "react";
 import { ContextAPI } from "../context/ContextAPI";
-import { createClient } from "pexels";
 import { CardImg } from "../Components/CardImg";
 import "./Home.css";
 export const Home = () => {
-  const API_KEY = "ulIo70LyKuyLYFuV8YYlsKRQgfsg76JjEQpXyLOWTjpJmrHVdNYVaQEy";
-  const { dataImg, SetDataImg } = useContext(ContextAPI);
+  const { dataImg,perPage, setPerPag } = useContext(ContextAPI);
+  const [isLimited, setLimite]=useState(false)
+  const msjLimite="No se pueden mostrar mas de 80 imagenes"
 
-  useEffect(() => {
-    const client = createClient(API_KEY);
-    const query = "Nature";
-    const perPage = 40;
-    client.photos
-      .search({ query, per_page: perPage })
-      .then((data) => {
-        SetDataImg(data.photos);
-      })
-      .catch();
-  }, [SetDataImg]);
+  const handlerClick=()=>{
+    if (perPage<80){
+    setPerPag(perPage+20)
+  }else{
+    setLimite(true)
+  }
+}
   return (
+    <>
     <main>
       {dataImg.map((dat, index) => (
         <CardImg key={index} datImg={dat} index={index} />
       ))}
     </main>
+    <section className="verMas">
+      <button onClick={handlerClick}>Ver Mas</button>
+       {isLimited?<p>{msjLimite}</p>:null}
+    </section>
+    
+    </>
   );
 };

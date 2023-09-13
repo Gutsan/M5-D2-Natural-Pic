@@ -15,6 +15,7 @@ Header{
    z-index: 1000;
     border-radius: 10px;
     backdrop-filter: blur(10px) saturate(180%);
+    user-select: none;
 }
 h1{
     display: flex;
@@ -31,7 +32,7 @@ h1 span{
 nav{
     display: flex;
     gap:10px;
-    font-family: sans-serif;
+    
 }
 nav a {
     text-decoration: none;

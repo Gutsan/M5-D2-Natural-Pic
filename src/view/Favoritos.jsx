@@ -9,7 +9,7 @@ export const Favorite = () => {
   return (
     <main>
       {dataImg.map((dat, index) =>
-        dat.liked ? <CardImg key={index} datImg={dat} index={index} /> : <></>
+        dat.liked ? <CardImg key={index} datImg={dat} index={index} /> : null
       )}
     </main>
   );

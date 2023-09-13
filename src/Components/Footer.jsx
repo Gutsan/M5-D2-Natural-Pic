@@ -5,7 +5,7 @@ export const Footer=()=>{
     <footer>
     <h2> <IconCamera /> Natural<span>Pic</span></h2>
     <h3>GUTSAN <IconCode /> 2023</h3>
-    <p>Photos provided by <a href="https://www.pexels.com/">PEXELS</a></p>
+    <p>Photos provided by <a href="https://www.pexels.com/" target="_blank">PEXELS</a></p>
     </footer>
     )
 }

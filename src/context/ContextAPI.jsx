@@ -27,12 +27,14 @@ export function ContextAPIProvider({ children }) {
       alt: "Nofound",
     },
   ]);
-
+  const [perPage, setPerPag]=useState(20)
   return (
     <ContextAPI.Provider
       value={{
         dataImg,
         SetDataImg,
+        perPage,
+        setPerPag,
       }}
     >
       {children}

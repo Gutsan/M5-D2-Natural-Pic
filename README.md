@@ -14,17 +14,17 @@ con React Router que deberás completar incluyendo lo correspondiente a Context 
 ### Requerimientos
 
 1. Crear un contexto con Context API que se pueda importar desde cualquier
-   componente de la aplicación. (2 Puntos)
+   componente de la aplicación. (2 Puntos) ✔️ 
 
-2. Usar el contexto creado como un componente para envolver toda la aplicación.
+2. Usar el contexto creado como un componente para envolver toda la aplicación. ✔️
    (2 Puntos)
 
-3. Asignar como valor del Provider un estado creado con el hook useState. (3 Puntos)
+3. Asignar como valor del Provider un estado creado con el hook useState. (3 Puntos) ✔️
 
 4. Hacer uso del hook useContext para acceder al estado global desde los
-   componentes que lo necesiten. (3 Puntos)
+   componentes que lo necesiten. (3 Puntos) ✔️
 
 ## Desarrollo de Desafio
 
-    ### API Pexels
-     Para obtener imagenes para galería se utiliza api paxels
+    API Pexels
+     Para generar galería se utiliza la api de PEXEL

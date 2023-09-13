@@ -1,6 +1,5 @@
 .Card-Img {
-  width: auto;
-  max-width: 20rem;
+  width: 15rem;
   height: 19rem;
   display: flex;
   flex-direction: column;
@@ -14,7 +13,7 @@
   transition: scale 300ms ease-in-out;
 }
 .Card-Img:hover {
-  scale: 1.1;
+  scale: 1.05;
 }
 .Card-Img img {
   border-radius: 10px;
@@ -22,6 +21,7 @@
   height: 80%;
   object-fit: cover;
 }
+
 .pie-photo {
   width: 95%;
   height: 15%;

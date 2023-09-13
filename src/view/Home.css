@@ -1,6 +1,37 @@
 main {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
   gap: 1rem;
-  min-height: 39rem;
+  min-height: 80vh;
+}
+
+.verMas{
+  margin-top: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.verMas button{
+  background: rgba(2, 190, 150, 0.8);
+  color: #fff;
+  border: none;
+  width: 5rem;
+  height: 2rem;
+  border-radius: 5px;
+}
+
+.verMas button:hover{
+  background: rgba(2, 190, 150, 0.3);
+  color: #fff;
+  border: none;
+  width: 5rem;
+  height: 2rem;
+  border-radius: 5px;
+}
+.verMas p{
+  color: rgba(171, 190, 2, 0.8);
+  font-size: small;
 }
